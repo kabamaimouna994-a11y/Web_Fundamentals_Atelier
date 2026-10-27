@@ -47,13 +47,7 @@
 
 2. À quoi servent les balises `<h1>`, `<p>`, `<ul>` et `<li>` ?
 
-   > _Ma réponse :_<h1> sert à afficher un titre principal.
-
-   <p> définit un paragraphe de texte.
-
-   <ul> crée une liste à puces non ordonnée.
-
-   <li> représente un élément (une ligne) à l'intérieur de cette liste. 
+   > _Ma réponse :_<h1> sert à afficher un titre principal, <p> définit un paragraphe de texte, <ul> crée une liste à puces non ordonnée, <li> représente un élément (une ligne) à l'intérieur de cette liste. 
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
@@ -65,11 +59,11 @@
 
 1. Pourquoi est-ce une bonne idée de séparer le code Python et le HTML ? (Pensez à une équipe avec un développeur et un graphiste.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_Cela permet une séparation claire des rôles et une meilleure organisation. Un développeur peut se concentrer sur la logique et le traitement des données en Python, tandis qu'un graphiste ou un intégrateur peut modifier la mise en page et le design en HTML sans risquer de casser le code du serveur. 
 
 2. Les `{{ prenom }}` sont-ils remplacés par le serveur ou par le navigateur ? Comment l'avez-vous vérifié ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_Ils sont remplacés par le serveur avant même que la page ne soit envoyée 
 
 ---
 
