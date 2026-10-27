@@ -123,15 +123,15 @@
 
 1. Quelle est la différence visible entre GET et POST ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ En GET, les données du formulaire s'affichent en clair dans la barre d'adresse. En POST, les données voyagent de manière invisible dans le corps de la requête HTTP, et la barre d'adresse reste propre.
 
 2. Pour un formulaire de **recherche**, quelle méthode choisiriez-vous ? Et pour un formulaire de **connexion avec mot de passe** ? Pourquoi ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Pour une recherche, on choisit GET pour pouvoir copier ou partager l'URL. Pour une connexion, on choisit impérativement POST pour des raisons de confidentialité et de sécurité (le mot de passe ne doit pas apparaître dans l'historique).
 
 3. Les données envoyées en POST sont-elles vraiment « secrètes » ? (Pensez à ce que vous avez vu dans l'onglet Réseau.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Non, elles ne sont pas secrètes : n'importe qui ouvrant les outils de développement (F12 > onglet Réseau > Charge utile) peut lire très facilement toutes les données envoyées en POST. Seul le chiffrement HTTPS protège leur transport.
 
 ---
 
@@ -139,15 +139,15 @@
 
 1. Quelle est la différence entre une erreur `4xx` et une erreur `5xx` ? Qui est « fautif » dans chaque cas ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Les erreurs 4xx (comme la 404) concernent une erreur du client (URL incorrecte, ressource inexistante). Les erreurs 5xx (comme la 500) indiquent une erreur interne du serveur (bogue dans le code Python).
 
 2. Comment fonctionne une redirection ? Qui fait la deuxième requête : le serveur ou le navigateur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur répond avec un code de redirection (comme 302) et une en-tête Location. C'est ensuite le navigateur qui effectue automatiquement une deuxième requête vers la nouvelle adresse.
 
 3. Donnez un exemple de situation où un vrai site utilise une redirection.
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Lorsqu'on se connecte à un site web, on est automatiquement redirigé vers la page de notre profil ou le tableau de bord.
 
 ---
 
@@ -155,19 +155,19 @@
 
 1. Citez trois informations que le serveur connaît sur vous, sans que vous ayez rien rempli.
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ L'adresse IP (la localisation approximative), le type de navigateur / système d'exploitation utilisé (User-Agent), et la langue préférée du système (Accept-Language)
 
 2. À quoi peut servir l'en-tête `Accept-Language` pour un site comme Wikipédia ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Il permet au serveur de savoir quelle langue le navigateur préfère afin d'afficher directement les articles dans la bonne langue.
 
 3. Dans l'Access log, retrouvez une requête qui a reçu un code `404`. Quelle page était demandée ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ La requête demandait généralement favicon.ico, car le navigateur cherche cette icône par défaut sans la trouver.
 
 4. Après cet exercice, que pensez-vous de la notion de « navigation anonyme » ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ La navigation « privée » cache l'historique sur l'ordinateur local, mais elle n'empêche pas du tout le serveur distant de voir de nombreuses informations techniques (IP, navigateur, système
 
 ---
 
@@ -175,15 +175,15 @@
 
 1. Quelle est la différence entre une page HTML et une réponse JSON ? À qui chacune est-elle destinée ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le HTML est destiné à un humain (il contient de la mise en page visuelle). Le JSON est destiné à une machine ou une application (c'est un format de données brut sous forme de texte structuré).
 
 2. Dans la page `/horloge`, quel code s'exécute sur le **serveur** et quel code s'exécute dans le **navigateur** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le code Python Flask qui récupère l'heure s'exécute sur le serveur, tandis que le code JavaScript ou l'affichage final s'exécute dans le navigateur
 
 3. Citez une application de votre téléphone qui, selon vous, utilise une API. Quelles données échange-t-elle ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ L'application Météo, qui interroge une API distante pour récupérer les températures et prévisions sous forme de données brutes
 
 ---
 
@@ -191,4 +191,4 @@
 
 En quelques phrases, expliquez à un ami ce qui se passe entre le moment où il tape une adresse dans son navigateur et celui où la page s'affiche :
 
-> _Ma réponse :_ 
+> _Ma réponse :_ Quand on tape une adresse, le navigateur envoie une requête HTTP à travers Internet jusqu'au serveur distant. Le serveur reçoit cette demande, analyse l'URL, exécute le code nécessaire (par exemple en Python avec Flask), assemble le template HTML et renvoie une réponse HTTP contenant le contenu. Enfin, le navigateur reçoit ce code et l'interprète pour afficher visuellement la page web à l'écran.
