@@ -50,8 +50,19 @@ def bonjour(prenom):
 def calcul():
     a = int(request.args.get("a", 0))
     b = int(request.args.get("b", 0))
-    return f"{a} + {b} = {a + b}"
-
+    op = request.args.get("op", "plus")
+    
+    if op == "fois":
+        resultat = a * b
+        symbole = "×"
+    elif op == "moins":
+        resultat = a - b
+        symbole = "-"
+    else:
+        resultat = a + b
+        symbole = "+"
+        
+    return f"{a} {symbole} {b} = {resultat}"
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
