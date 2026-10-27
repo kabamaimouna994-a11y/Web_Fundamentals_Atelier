@@ -1,10 +1,10 @@
 # 📒 Mon carnet de bord
 
-**Nom :** 
+**Nom :**    KABA
 
-**Prénom :** 
+**Prénom :**  Maïmouna
 
-**Adresse de mon site :** https://______.pythonanywhere.com
+**Adresse de mon site :** https://___maika___.pythonanywhere.com
 
 > Modifiez ce fichier directement sur GitHub (icône crayon ✏️) pour répondre aux questions de chaque exercice.
 > Écrivez avec vos propres mots : une réponse courte et juste vaut mieux qu'un long copier-coller ! 🙂
