@@ -71,15 +71,15 @@
 
 1. Quelle est la différence de rôle entre le HTML et le CSS ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le HTML définit la structure et le contenu de la page, tandis que le CSS gère l'apparence visuelle et la mise en forme (couleurs, polices, marges).
 
 2. Pour afficher votre page `/presentation`, combien de fichiers le navigateur doit-il télécharger ? (Vous pourrez le vérifier à l'exercice suivant !)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Il doit télécharger 2 fichiers : le fichier HTML principal et le fichier de style externe style.css
 
 3. Pourquoi faut-il parfois faire **Ctrl + F5** pour voir les changements de CSS ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Pour vider le cache du navigateur et le forcer à télécharger la toute dernière version du fichier CSS depuis le serveur
 
 ---
 
