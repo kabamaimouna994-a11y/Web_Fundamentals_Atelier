@@ -71,19 +71,19 @@ def formulaire():
 
 
 @app.route("/salut", methods=["GET", "POST"])
+
+@app.route("/salut", methods=["GET", "POST"])
 def salut():
     if request.method == "POST":
         prenom = request.form.get("prenom", "inconnu")
         ville = request.form.get("ville", "nulle part")
+        couleur = request.form.get("couleur", "black")
     else:
         prenom = request.args.get("prenom", "inconnu")
         ville = request.args.get("ville", "nulle part")
-    return f"Bonjour {prenom}, qui vient de {ville} ! (reçu en {request.method})"
-
-couleur = request.form.get("couleur", "black")
-
-return f'<h1 style="color: {couleur};">Bonjour {prenom}, qui vient de {ville} !</h1>'
-
+        couleur = request.args.get("couleur", "black")
+        
+    return f'<h1 style="color: {couleur};">Bonjour {prenom}, qui vient de {ville} !</h1> (reçu en {request.method})'
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
