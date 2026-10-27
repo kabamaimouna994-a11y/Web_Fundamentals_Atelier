@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Mon site{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Le menu de navigation commun à toutes les pages -->
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/presentation">Présentation</a>
+    </nav>
+    
+    <hr>
+
+    <!-- C'est ici que le contenu spécifique de chaque page viendra s'insérer -->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
