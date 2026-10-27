@@ -28,6 +28,7 @@ def accueil():
 def presentation():
     return """
     <h1>MAÏKA</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
     <p>Je suis étudiante en <strong>deuxième année d'informatique</strong>.</p>
     <h2>Ce que j'aime</h2>
     <ul>
@@ -53,4 +54,3 @@ def loisirs():
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
