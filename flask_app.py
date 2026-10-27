@@ -80,6 +80,10 @@ def salut():
         ville = request.args.get("ville", "nulle part")
     return f"Bonjour {prenom}, qui vient de {ville} ! (reçu en {request.method})"
 
+couleur = request.form.get("couleur", "black")
+
+return f'<h1 style="color: {couleur};">Bonjour {prenom}, qui vient de {ville} !</h1>'
+
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
