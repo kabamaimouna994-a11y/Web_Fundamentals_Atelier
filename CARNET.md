@@ -87,19 +87,19 @@
 
 1. Que signifie HTTP ? Qui envoie la **requête** et qui envoie la **réponse** ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_HTTP signifie HyperText Transfer Protocol. Le navigateur envoie la requête (pour demander une ressource) et le serveur envoie la réponse (qui contient le fichier demandé). 
 
 2. Combien de requêtes votre page `/presentation` a-t-elle déclenchées ? Lesquelles ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Elle a déclenché 3 requêtes principales : La requête presentation, La requête style.css, La requête favicon.ico
 
 3. Que signifie le code `200` ? Et le code `404` de la favicon ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le code 200 signifie que la requête a réussi (OK). Le code 404 signifie que la ressource demandée est introuvable (Not Found), ce qui est normal pour la favicon puisque nous n'en avons pas encore ajouté sur le site.
 
 4. Pourquoi les modifications faites dans l'onglet Éléments ne sont-elles pas visibles par les autres visiteurs ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Parce que ces modifications sont faites en local directement dans la mémoire vive du navigateur sur ta machine. Le code source d'origine stocké sur le serveur (via GitHub) n'a pas bougé, donc les autres visiteurs reçoivent toujours la version initiale.
 
 ---
 
