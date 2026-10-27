@@ -43,7 +43,7 @@ def loisirs():
 
 @app.get("/bonjour/<prenom>")
 def bonjour(prenom):
-    return f"<h1>Bonjour {prenom} !</h1>"
+    return render_template("bonjour.html", prenom=prenom)
 
 
 @app.get("/calcul")
