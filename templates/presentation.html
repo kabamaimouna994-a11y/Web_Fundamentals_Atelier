@@ -6,6 +6,13 @@
 </head>
 <body>
     <h1>{{ prenom }} {{ nom }}</h1>
-    <p>Je suis étudiante en <strong>deuxième année d'informatique</strong>.</p>
+    <p>Je suis étudiante en <strong>première année d'informatique</strong>.</p>
+    
+    <h2>Ce que j'aime</h2>
+    <ul>
+    {% for loisir in loisirs %}
+        <li>{{ loisir }}</li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
