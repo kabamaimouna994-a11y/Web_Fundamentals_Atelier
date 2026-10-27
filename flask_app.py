@@ -8,7 +8,7 @@
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, abort
 
 app = Flask(__name__)
 
@@ -84,6 +84,24 @@ def salut():
         couleur = request.args.get("couleur", "black")
         
     return f'<h1 style="color: {couleur};">Bonjour {prenom}, qui vient de {ville} !</h1> (reçu en {request.method})'
+
+
+# 3xx : une redirection
+@app.get("/home")
+def home():
+    return redirect("/")
+
+
+# 4xx : un accès interdit
+@app.get("/secret")
+def secret():
+    abort(403)
+
+
+# Une page d'erreur 404 personnalisée
+@app.errorhandler(404)
+def page_introuvable(erreur):
+    return render_template("404.html"), 404
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
