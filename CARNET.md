@@ -27,7 +27,7 @@
 
 1. Dans l'URL `https://www.google.com/maps`, quel est le nom de domaine ? Quel est le chemin ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le nom de domaine est https://www.google.com et le chemin est /maps
 
 2. Que veut dire le message *Not Found* ? Qui l'a envoyé : votre navigateur ou le serveur ?
 
@@ -35,7 +35,7 @@
 
 3. Que se passe-t-il si deux fonctions portent le même nom dans `flask_app.py` ? (Indice : essayez, puis lisez l'Error log.)
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Not Found" (ou erreur 404) signifie que la page demandée n'existe pas. C'est le serveur qui l'a envoyé après avoir cherché la route correspondante sans la trouver
 
 ---
 
@@ -51,7 +51,7 @@
 
 3. Pourquoi l'image s'affiche-t-elle alors qu'elle n'est pas sur votre serveur ?
 
-   > _Ma réponse :_ 
+   > _Ma réponse :_ Le serveur plante (généralement une erreur de type AssertionError ou un conflit de nom dans l'Error log) car Flask ne sait plus quelle route associer à quelle fonction.
 
 ---
 
